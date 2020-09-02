@@ -1,3 +1,7 @@
+:focus {
+  outline: none;
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -10,4 +14,99 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+p {
+  font: 500 13px/20px BaronSans, Helvetica, Arial;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+button {
+  padding: 0;
+  margin: 0;
+  background: none;
+  border: none;
+  width: 275px;
+  height: 44px;
+  border: 1px solid #E1E1E1;
+  padding: 15px;
+  text-transform: uppercase;
+  font: 500 12px/14px BaronSans, Helvetica, Arial;
+  letter-spacing: 1px;
+}
+
+.button-primary {
+  color: white;
+  background: black;
+  border-color: black;
+  margin-bottom: 16px;
+}
+
+.x {
+  height: 20px;
+  width: 20px;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 20vh;
+}
+
+.modal-container {
+  position: fixed;
+  z-index: 1300;
+  right: 0px;
+  bottom: 0px;
+  top: 0px;
+  left: 0px;
+  opacity: 0;
+  background-color: #fafafacc;
+  transition: all .35s ease-in-out 0ms;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal {
+  position: relative;
+  box-shadow: 0 1px 2px 1px #0000001a;
+  width: 734px;
+  height: 534px;
+  background: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-inner {
+  width: 350px;
+  transition: all .35s ease-in-out 0ms;
+  position: absolute;
+  text-align: center;
+}
+
+.open {
+  z-index: 100;
+  opacity: 1;
+  visibility: visible;
+  transition: all .35s ease-in-out 0ms;
+}
+
+.closed {
+  opacity: 0;
+  visibility: hidden; 
+  transition: all .35s ease-in-out 0ms;
+}
+
+@font-face {
+  font-family: "BaronSans";
+  font-style: normal;
+  font-weight: 500;
+ 	src: url("/BaronSans-Medium.otf") format("opentype");
 }

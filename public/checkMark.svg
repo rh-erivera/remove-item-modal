@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="77px" height="77px" viewBox="0 0 77 77" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Group 3</title>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Reason-for-Return-Copy-5" transform="translate(-562.000000, -304.000000)">
+            <g id="Grommet/Success-Checkmark" transform="translate(413.000000, 304.000000)">
+                <g id="Group-3" transform="translate(149.000000, 0.000000)">
+                    <circle id="Oval" stroke="#CCCCCC" cx="38.5" cy="38.5" r="38"></circle>
+                    <g id="Group" transform="translate(24.000000, 26.000000)" fill="#000000" fill-rule="nonzero">
+                        <g id="checkmark-(2)" transform="translate(0.000000, 1.529412)">
+                            <path d="M28.7330774,0.184622535 C28.415609,-0.0906851339 27.9347904,-0.0539660942 27.6570269,0.26719781 L9.87710198,21.0509121 L1.30234226,12.4591108 C1.00469801,12.160875 0.52087743,12.160875 0.223233184,12.4591108 C-0.0744110614,12.7573466 -0.0744110614,13.2421287 0.223233184,13.5403645 L9.38104712,22.7163788 C9.52451674,22.8586012 9.71986879,22.9396441 9.92133798,22.9396441 C9.93051369,22.9396441 9.94116205,22.9396441 9.95186705,22.9411765 C10.1640412,22.9319825 10.3639811,22.8341408 10.5013336,22.6735304 L28.8170181,1.26281159 C29.0902504,0.941647683 29.0536042,0.459873451 28.7330774,0.184622535 Z" id="Path"></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
