@@ -1,10 +1,28 @@
 import React, { useRef } from 'react';
+import anime from 'animejs/lib/anime.es.js';
+
 
 export default function App() {
   const [open, setOpen] = React.useState(false);
   const removeItem = useRef(null);
   const itemRemoved = useRef(null);
   const modal = useRef(null);
+  var checkTimeline = anime.timeline({ autoplay: true, direction: 'normal', loop: 2 });
+
+  checkTimeline
+  .add({
+    targets: '.checkmark',
+    scale: [
+      { value: [0, 1], duration: 500, easing: 'easeOutQuad' }
+    ]})
+  .add({
+    targets: '.check',
+    strokeDashoffset: {
+      value: [anime.setDashoffset, 0],
+      duration: 600,
+      delay: 200,
+      easing: 'easeOutQuart'
+    }})
 
   function remove() {
     removeItem.current.className = "modal-inner closed";
@@ -36,7 +54,23 @@ export default function App() {
               <button onClick={() => { setOpen(!open); }}>cancel</button>
             </div>
             <div ref={itemRemoved} className="modal-inner closed">
-              <img src="/checkMark.svg" alt="checkMark"/>
+            <svg class="checkmark"
+              xmlns="http://www.w3.org/2000/svg"
+              width="77px"
+              height="77px"
+              viewBox="0 0 77 77">
+              <circle class="circle"
+                cx="38.5"
+                cy="38.5"
+                r="38"
+                stroke="#CCCCCC"
+                fill="none"/>
+              <path class="check"
+                d="M26 40l9 9 20-20 "
+                fill="none"
+                stroke="#000"
+                stroke-width="2"></path>
+              </svg>
               <p>item removed</p>
             </div>
           </div>
