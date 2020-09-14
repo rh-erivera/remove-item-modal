@@ -45,7 +45,11 @@ export default function App() {
         <button className="button-primary" onClick={() => { setOpen(!open); }}>Click Me</button>
         <div ref={modal} className={ open ? "open modal-container" : "closed modal-container"}>
           <div className="modal">
-            <svg className="x" onClick={() => { setOpen(!open); }} focusable="false" viewBox="0 0 20 20" aria-hidden="true"><title>Combined Shape</title><desc>Created with Sketch.</desc><g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g id="Grommet/X-Close" transform="translate(-15.000000, -15.000000)"><rect id="Rectangle" x="0" y="0" width="50" height="50"></rect><path d="M34.3548387,15 L35,15.6451613 L25.645,24.999 L35,34.3548387 L34.3548387,35 L25,25.645 L15.6451613,35 L15,34.3548387 L24.354,25 L15,15.6451613 L15.6451613,15 L25,24.354 L34.3548387,15 Z" id="Combined-Shape" fill="currentColor"></path></g></g></svg>
+            {/* <svg className="x" onClick={() => { setOpen(!open); }} focusable="false" viewBox="0 0 20 20" aria-hidden="true"><title>Combined Shape</title><desc>Created with Sketch.</desc><g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g id="Grommet/X-Close" transform="translate(-15.000000, -15.000000)"><rect id="Rectangle" x="0" y="0" width="50" height="50"></rect><path d="M34.3548387,15 L35,15.6451613 L25.645,24.999 L35,34.3548387 L34.3548387,35 L25,25.645 L15.6451613,35 L15,34.3548387 L24.354,25 L15,15.6451613 L15.6451613,15 L25,24.354 L34.3548387,15 Z" id="Combined-Shape" fill="currentColor"></path></g></g></svg> */}
+            <div class="close-container" onClick={() => { setOpen(!open); }}>
+              <div class="leftright"></div>
+              <div class="rightleft"></div>
+            </div>
             <div ref={removeItem} className="modal-inner open">
               <p>are you sure you want to remove this item?</p>
               <button 
